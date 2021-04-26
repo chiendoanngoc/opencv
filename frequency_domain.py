@@ -50,13 +50,14 @@ def gaussianHP(D0,imgShape):
 # print("Gaussian HP")
 # print(gaussianHP(3,(5,5)))
 
-img = cv2.imread('noise.png', 0)
+img = cv2.imread('noise.png')
+img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 print(img)
-# cv2.imshow('Original Image', img)
+cv2.imshow('Original Image', img)
 
 original_spectrum = np.fft.fft2(img)
 print(original_spectrum)
 print(np.log(1+np.abs(original_spectrum)))
-# cv2.imshow('Original Spectrum', np.log(1+np.abs(original_spectrum)))
+cv2.imshow('Original Spectrum', np.log(1+np.abs(original_spectrum)))
 
 cv2.waitKey(0)

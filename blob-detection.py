@@ -14,19 +14,19 @@ params.maxThreshold = 200
 
 
 # Filter by Area.
-params.filterByArea = True
+params.filterByArea = False
 params.minArea = 1500
 
 # Filter by Circularity
-params.filterByCircularity = True
+params.filterByCircularity = False
 params.minCircularity = 0.5
 
 # Filter by Convexity
-params.filterByConvexity = True
+params.filterByConvexity = False
 params.minConvexity = 0.9
     
 # Filter by Inertia
-params.filterByInertia = True
+params.filterByInertia = False
 params.minInertiaRatio = 0.1
 
 # Create a detector with the parameters
